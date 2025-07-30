@@ -3,10 +3,14 @@
 .dot{border-radius: 10px;padding: 1px 5px;width:auto;margin-right:5px}
 .black{background-color:var(--black); color:white}
 .francais{background-color:var(--francais);color:black}
+.maths{background-color:var(--maths); color:white}
+.qlm{background-color:var(--qlm);color:black}
 
 :root { /* COULEURS DES MATIÈRES */
   --black: #000000;
   --francais: #38b6ff;
+  --maths: #ff0000;
+  --qlm: #92d050;
 }
 
 i.fa-solid {font-size: 9px;display: inline-block;vertical-align: middle;position: relative;top: -1px; /* ajuste ce chiffre selon besoin */}
