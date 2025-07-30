@@ -4,55 +4,63 @@
   <meta charset="UTF-8" />
   <title>Cahier journal</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+
 </head>
 <body>
-
   <div class="container">
 
-    <!-- Ligne date -->
-    <div class="row date-row">
-      <div class="date">Lundi 1 septembre</div>
+    <div class="date-row">
+      <center>
+        <div class="jour">Lundi 1 septembre<br><span>Période 1 - Semaine 1</span></div>
+      </center>
     </div>
 
-    <!-- Ligne titres classes -->
-    <div class="row header-row">
+    <div class="header-row">
       <div class="cell titre-classe">PS</div>
       <div class="cell titre-classe">MS</div>
       <div class="cell titre-classe">CE2</div>
       <div class="cell titre-classe">CM2</div>
     </div>
 
-    <!-- Créneaux horaires matin -->
-    <div class="schedule">
+    <div class="planning-grid">
+      <!-- 8:20 -->
+      <div class="cell fusion-h fusion-v""><span class="dot black"><i class="fa-solid fa-clock"></i> 8:20</span><strong>Accueil des élèves dans la classe.</strong> Accès aux coins jeux avec colliers.<br><br><i class="fa-solid fa-file"></i> <strong>Donner les dossiers de rentrée.</strong><br><br><span class="dot francais">Dessin libre dans le cahier de gribouillage</span> <strong>Priorité aux MS, qui connaissent la classe.</strong> Dater la page au tampon + Dictée à l'adulte du dessin.</div>
+      <div class="cell fusion-h"><strong>Accueil des élèves dans la classe.</strong><br><span class="dot francais">Activité de rentrée</span><i class="fa-solid fa-file"></i> <a>Me voici me voilà</a> + <i class="fa-solid fa-file"></i> <a>Tout sur moi</a>.<br><br><i class="fa-solid fa-file"></i> <strong>Donner les dossiers de rentrée.</strong></div>
 
-      <div class="row"><div class="cell">8h20</div><div class="cell">8h20</div><div class="cell">8h20</div><div class="cell">8h20</div></div>
-      <div class="row"><div class="cell">8h40</div><div class="cell">8h40</div><div class="cell">8h40</div><div class="cell">8h40</div></div>
-      <div class="row"><div class="cell">9h00</div><div class="cell">9h00</div><div class="cell">9h00</div><div class="cell">9h00</div></div>
-      <div class="row"><div class="cell">9h20</div><div class="cell">9h20</div><div class="cell">9h20</div><div class="cell">9h20</div></div>
-      <div class="row"><div class="cell">9h40</div><div class="cell">9h40</div><div class="cell">9h40</div><div class="cell">9h40</div></div>
-      <div class="row"><div class="cell">10h00</div><div class="cell">10h00</div><div class="cell">10h00</div><div class="cell">10h00</div></div>
-      <div class="row"><div class="cell">10h20</div><div class="cell">10h20</div><div class="cell">10h20</div><div class="cell">10h20</div></div>
-      <div class="row"><div class="cell">10h40</div><div class="cell">10h40</div><div class="cell">10h40</div><div class="cell">10h40</div></div>
-      <div class="row"><div class="cell">11h00</div><div class="cell">11h00</div><div class="cell">11h00</div><div class="cell">11h00</div></div>
-      <div class="row"><div class="cell">11h20</div><div class="cell">11h20</div><div class="cell">11h20</div><div class="cell">11h20</div></div>
+      <!-- 8:40 -->
+      <div class="cell fusion-h"><div class="icon-program" style="background-image: var(--dicteedephrases)"></div><span class="dot black"><i class="fa-solid fa-clock"></i> 8:40</span> Présenter la mise en page du cahier + <i class="fa-solid fa-file"></i> Distribuer les marque-page. <br><span class="dot francais">Dictée diagnostique</span> @cf guide péda (explications de la séance aux élèves). <span class="small">Pas de correction collective. Correction individuelle avec les camemberts, puis correction collective avec explications le mardi.</span></div>
 
-      <!-- Pause déjeuner -->
+      <!-- 9:00 -->
+      <div class="cell fusion-h"><span class="dot black"><i class="fa-solid fa-clock"></i> 9:00</span><span class="dot black">Regroupement</span><ul><li>Premier élément</li><li>Deuxième élément</li><li>Troisième élément</li></ul></div>
+      <div class="cell fusion-h"><div class="icon-program" style="background-image: var(--jogging)"></div> Présentation du cahier d’écrivain <i class="fa-solid fa-pencil"></i> au crayon de papier pour ce premier jogging. <br><span class="dot francais">Jogging P1 S1 J1</span> - <strong>Ecrire sa présentation.</strong> <span class="small">Si c’est réalisé trop rapidement, terminer les fiches de rentrée.</span></div>
 
-      <!-- Créneaux horaires après-midi -->
-      <div class="row"><div class="cell">13h20</div><div class="cell">13h20</div><div class="cell">13h20</div><div class="cell">13h20</div></div>
-      <div class="row"><div class="cell">13h40</div><div class="cell">13h40</div><div class="cell">13h40</div><div class="cell">13h40</div></div>
-      <div class="row"><div class="cell">14h00</div><div class="cell">14h00</div><div class="cell">14h00</div><div class="cell">14h00</div></div>
-      <div class="row"><div class="cell">14h20</div><div class="cell">14h20</div><div class="cell">14h20</div><div class="cell">14h20</div></div>
-      <div class="row"><div class="cell">14h40</div><div class="cell">14h40</div><div class="cell">14h40</div><div class="cell">14h40</div></div>
-      <div class="row"><div class="cell">15h00</div><div class="cell">15h00</div><div class="cell">15h00</div><div class="cell">15h00</div></div>
-      <div class="row"><div class="cell">15h20</div><div class="cell">15h20</div><div class="cell">15h20</div><div class="cell">15h20</div></div>
-      <div class="row"><div class="cell">15h40</div><div class="cell">15h40</div><div class="cell">15h40</div><div class="cell">15h40</div></div>
-      <div class="row"><div class="cell">16h00</div><div class="cell">16h00</div><div class="cell">16h00</div><div class="cell">16h00</div></div>
-      <div class="row"><div class="cell">16h20</div><div class="cell">16h20</div><div class="cell">16h20</div><div class="cell">16h20</div></div>
-      <div class="row"><div class="cell">16h30</div><div class="cell">16h30</div><div class="cell">16h30</div><div class="cell">16h30</div></div>
+      <!-- 9:20 -->
+      <div class="cell">Sieste PS</div>
+      <div class="cell">Récré MS</div>
+      <div class="cell">Ecriture CE2</div>
+      <div class="cell">Français CM2</div>
 
+      <!-- 9:40 -->
+      <div class="cell">Sieste PS</div>
+      <div class="cell">Récré MS</div>
+      <div class="cell">Ecriture CE2</div>
+      <div class="cell">Français CM2</div>
+
+      <!-- 10:00 -->
+      <div class="cell">Sieste PS</div>
+      <div class="cell">Récré MS</div>
+      <div class="cell">Ecriture CE2</div>
+      <div class="cell">Français CM2</div>
+
+      <!-- 10:20 -->
+      <div class="cell">Sieste PS</div>
+      <div class="cell">Récré MS</div>
+      <div class="cell">Ecriture CE2</div>
+      <div class="cell">Français CM2</div>
     </div>
-  </div>
 
+  </div>
 </body>
 </html>

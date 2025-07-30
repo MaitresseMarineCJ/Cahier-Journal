@@ -1,8 +1,34 @@
+/* FOND : VARIABLES */
+
+.dot{border-radius: 10px;padding: 1px 5px;width:auto;margin-right:5px}
+.black{background-color:var(--black); color:white}
+.francais{background-color:var(--francais);color:black}
+
+:root { /* COULEURS DES MATIÈRES */
+  --black: #000000;
+  --francais: #38b6ff;
+}
+
+i.fa-solid {font-size: 9px;display: inline-block;vertical-align: middle;position: relative;top: -1px; /* ajuste ce chiffre selon besoin */}
+
+.icon-program {width: 50px;height: 50px;background-size: contain;background-repeat: no-repeat;background-position: center;float: left;margin: -5px 5px -5px -5px;}
+:root { /* ICONES DU PROGRAMME */
+  --dicteedephrases: url('https://zupimages.net/up/25/31/xi6r.png');
+  --jogging: url('https://zupimages.net/up/25/31/a74g.png');
+}
+
+.small{font-size:0.60rem;line-height:1.5;border:1px solid #ccc;}
+
+/* --------------------------------------------- */
+
+/* FORME : STRUCTURE DU CODE */
+
 body {
   font-family: Arial, sans-serif;
   margin: 2rem;
-  background: #f9f9f9;
   color: #333;
+  font-size: 0.70rem;
+  line-height: 1rem;
 }
 
 .container {
@@ -10,42 +36,109 @@ body {
   margin: 0 auto;
 }
 
-.row {
-  display: flex;
-  border-bottom: 1px solid #ccc;
-  align-items: center;
-}
-
 .date-row {
-  justify-content: center;
   font-weight: bold;
   font-size: 1.4rem;
   padding: 1rem 0;
-  border-bottom: 3px solid #3498db;
   background: black;
   margin-bottom: 1rem;
   text-transform: uppercase;
   color: white;
+  border-radius: 20px;
+}
+
+.date-row span {
+  font-size: 0.8rem;
 }
 
 .header-row {
-  background: #3498db;
+  display: flex;
+  background: black;
   color: white;
   font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.cell {
+.header-row .cell {
   flex: 1;
   padding: 10px;
-  border-right: 1px solid #2980b9;
-  min-height: 40px;
-  box-sizing: border-box;
+  border-right: 1px solid white;
 }
 
-.cell:last-child {
+.header-row .cell:last-child {
   border-right: none;
 }
 
-.titre-classe {
-  text-align: center;
+.planning-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: -1px;
+}
+
+.cell {
+  background: white;
+  padding: 10px;
+  min-height: 40px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.titre-classe{
+  color:white;
+  background-color: black;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;     /* centre verticalement */
+  text-align: center
+}
+
+/* fusion horizontale: la cellule occupe 2 colonnes */
+.fusion-h {
+  grid-column: span 2;
+  column-count: initial !important;
+  columns: initial !important
+}
+
+/* fusion verticale: la cellule occupe 2 lignes */
+.fusion-v {
+  grid-row: span 2;
+}
+
+a {
+   /* RESET */
+   text-decoration: none;
+   line-height: 1;
+
+   position: relative;
+   z-index: 0;
+   display: inline-block;
+   padding: 1px 3px;
+   overflow: hidden;
+   color: #333;
+   vertical-align: bottom;
+   transition: color .3s ease-out;
+}
+
+a::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   transform: translateY(calc(100% - 2px));
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(60deg, #000000 0%, #888888 100%);
+   transition: transform .25s ease-out;
+  border-radius: 1px
+}
+
+a:hover { 
+   color: #fff; 
+}
+a:hover::before {
+   transform: translateY(0);
+   transition: transform .25s ease-out;
 }
