@@ -1,10 +1,14 @@
 /* FOND : VARIABLES */
 
 .dot{border-radius: 10px;padding: 1px 5px;width:auto;margin-right:5px}
+.dot + .ateliers{position:absolute;display:inline-block;width:25%}
 .black{background-color:var(--black); color:white}
 .francais{background-color:var(--francais);color:black}
 .maths{background-color:var(--maths); color:white}
+.ceinture img{width:15px;position:relative;top:4px}
 .qlm{background-color:var(--qlm);color:black}
+.time{background-color:var(--black); color:white}
+.time::before {font-family: "Font Awesome 6 Free";font-weight: 900;content: "\f017";margin-right:4px;font-size:0.80em;margin-top:-2px;}
 
 :root { /* COULEURS DES MATIÈRES */
   --black: #000000;
@@ -18,10 +22,21 @@ i.fa-solid {font-size: 9px;display: inline-block;vertical-align: middle;position
 .icon-program {width: 50px;height: 50px;background-size: contain;background-repeat: no-repeat;background-position: center;float: left;margin: -5px 5px -5px -5px;}
 :root { /* ICONES DU PROGRAMME */
   --dicteedephrases: url('https://zupimages.net/up/25/31/xi6r.png');
+  --grammaire: url('https://i.ibb.co/xb240qt/grammaire.png');
   --jogging: url('https://zupimages.net/up/25/31/a74g.png');
+  --numeration: url('https://i.ibb.co/FbCPFTz3/num-ration.png');
+  --problemes: url('https://i.ibb.co/DPQPyLDt/problemes.png');
 }
 
-.small{font-size:0.60rem;line-height:1.5;border:1px solid #ccc;}
+.small { display:inline-block; font-size:0.55rem; color:#888; line-height:1; text-align:justify; border-left:1px solid #ccc; padding-left:0.4em; margin-left:0.4em; vertical-align:middle; }
+.ref-code{font-family:monospace,monospace;font-size:.7rem;color:inherit;text-decoration:underline dotted #0003;padding:0 1px;white-space:nowrap;user-select:text}
+.ref-guide{font-style:normal;font-weight:500;font-size:.65rem;color:#666;padding-left:2px;border-left:2px solid #bbb;margin:0 0 0 4px;font-family:monospace,monospace;display:inline;letter-spacing:-0.5px}
+.ref-guide::before{content:"@ ";font-weight:600;color:#999;margin-right:3px}
+
+.modfr{border:1px solid var(--francais)}
+.modfr > span{background-color:var(--francais);padding: 0px 3px;} 
+.modma{border:1px solid var(--maths)}
+.modma > span{background-color:var(--maths);padding: 0px 3px;} 
 
 /* --------------------------------------------- */
 
@@ -105,44 +120,71 @@ body {
   columns: initial !important
 }
 
+.fusion-hh {
+  grid-column: span 3;
+  column-count: initial !important;
+  columns: initial !important
+}
+
+.recre-tous {
+  grid-column: span 4;
+  column-count: initial !important;
+  columns: initial !important;
+  background-color: var(--black);
+  color:white
+}
+
+.recre-petits {
+  grid-column: span 2;
+  column-count: initial !important;
+  columns: initial !important;
+  background-color: var(--black);
+  color:white
+}
+
+.recre-aprem {
+  grid-column: span 3;
+  column-count: initial !important;
+  columns: initial !important;
+  background-color: var(--black);
+  color:white
+}
+
 /* fusion verticale: la cellule occupe 2 lignes */
 .fusion-v {
   grid-row: span 2;
 }
 
+.fusion-v-sieste {
+  grid-row: span 7;
+}
+
 a {
-   /* RESET */
-   text-decoration: none;
-   line-height: 1;
-
-   position: relative;
-   z-index: 0;
-   display: inline-block;
-   padding: 1px 3px;
-   overflow: hidden;
-   color: #333;
-   vertical-align: bottom;
-   transition: color .3s ease-out;
+  background: linear-gradient(to top, #e0e0e0 60%, transparent 60%);
+  color: #000;
+  text-decoration: none;
+}
+a[href]::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900; /* solid */
+  content: "\f35d"; /* fa-arrow-up-right-from-square */
+  margin-right: 0.4em;
+  font-size: 0.9em;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+a:not([href])::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900; /* solid */
+  content: "\f15b"; /* fa-file */
+  margin-right: 0.4em;
+  font-size: 0.9em;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
 }
 
-a::before {
-   content: "";
-   position: absolute;
-   z-index: -1;
-   top: 0;
-   left: 0;
-   transform: translateY(calc(100% - 2px));
-   width: 100%;
-   height: 100%;
-   background-image: linear-gradient(60deg, #000000 0%, #888888 100%);
-   transition: transform .25s ease-out;
-  border-radius: 1px
-}
 
-a:hover { 
-   color: #fff; 
-}
-a:hover::before {
-   transform: translateY(0);
-   transition: transform .25s ease-out;
-}
