@@ -29,15 +29,23 @@ i.fa-solid {font-size: 9px;display: inline-block;vertical-align: middle;position
 .icon-program {width: 50px;height: 50px;background-size: contain;background-repeat: no-repeat;background-position: center;float: left;margin: -5px 5px -5px -5px;}
 :root { /* ICONES DU PROGRAMME */
   --anglaisimg: url('https://www.zupimages.net/up/25/31/hkom.png');
+  --artsimg: url('https://i.ibb.co/whCZPRh1/arts.png');
   --calculm: url('https://www.zupimages.net/up/25/31/8384.png');
   --comprehension: url('https://www.zupimages.net/up/25/31/94at.png');
+  --conjugaison: url('https://www.zupimages.net/up/25/31/c10e.png');
+  --copie: url('https://www.zupimages.net/up/25/31/wdtm.png');
   --dicteedephrases: url('https://zupimages.net/up/25/31/xi6r.png');
+  --dicteecorrection: url('https://zupimages.net/up/25/31/9vrm.png');
+  --ecriture: url('https://www.zupimages.net/up/25/31/fxw2.png');
   --epsimg: url('https://www.zupimages.net/up/25/31/osrr.png');
   --fluence: url('https://www.zupimages.net/up/25/31/fqvh.png');
+  --geometrie: url('https://www.zupimages.net/up/25/31/niop.png');
   --grammaire: url('https://i.ibb.co/xb240qt/grammaire.png');
+  --histoire: url('https://i.ibb.co/20SxgPKB/histoire.png');
   --jogging: url('https://zupimages.net/up/25/31/a74g.png');
   --motricite: url('https://www.zupimages.net/up/25/31/qjai.png');
   --numeration: url('https://i.ibb.co/FbCPFTz3/num-ration.png');
+  --poesie: url('https://www.zupimages.net/up/25/31/uavb.png');
   --problemes: url('https://i.ibb.co/DPQPyLDt/problemes.png');
 }
 
@@ -50,6 +58,8 @@ i.fa-solid {font-size: 9px;display: inline-block;vertical-align: middle;position
 .modfr > span{background-color:var(--francais);padding: 0px 3px;} 
 .modma{border:1px solid var(--maths)}
 .modma > span{background-color:var(--maths);padding: 0px 3px;} 
+.modqlm{border:1px solid var(--qlm)}
+.modqlm > span{background-color:var(--qlm);padding: 0px 3px;} 
 
 /* --------------------------------------------- */
 
