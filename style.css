@@ -22,6 +22,7 @@
   --francais: #38b6ff;
   --maths: #ff0000;
   --qlm: #92d050;
+  --white: #ffffff;
 }
 
 i.fa-solid {font-size: 9px;display: inline-block;vertical-align: middle;position: relative;top: -1px; /* ajuste ce chiffre selon besoin */}
@@ -31,6 +32,7 @@ i.fa-solid {font-size: 9px;display: inline-block;vertical-align: middle;position
   --anglaisimg: url('https://www.zupimages.net/up/25/31/hkom.png');
   --artsimg: url('https://i.ibb.co/whCZPRh1/arts.png');
   --calculm: url('https://www.zupimages.net/up/25/31/8384.png');
+  --calculp: url('https://i.ibb.co/fzVQqF4Y/calcul-p.png');
   --comprehension: url('https://www.zupimages.net/up/25/31/94at.png');
   --conjugaison: url('https://www.zupimages.net/up/25/31/c10e.png');
   --copie: url('https://www.zupimages.net/up/25/31/wdtm.png');
@@ -43,6 +45,8 @@ i.fa-solid {font-size: 9px;display: inline-block;vertical-align: middle;position
   --grammaire: url('https://i.ibb.co/xb240qt/grammaire.png');
   --histoire: url('https://i.ibb.co/20SxgPKB/histoire.png');
   --jogging: url('https://zupimages.net/up/25/31/a74g.png');
+  --lexique: url('https://i.ibb.co/wNKQGDHT/lexique.png');
+  --litterature: url('https://i.ibb.co/Wpx7CrKZ/litt.png');
   --motricite: url('https://www.zupimages.net/up/25/31/qjai.png');
   --numeration: url('https://i.ibb.co/FbCPFTz3/num-ration.png');
   --poesie: url('https://www.zupimages.net/up/25/31/uavb.png');
@@ -54,11 +58,11 @@ i.fa-solid {font-size: 9px;display: inline-block;vertical-align: middle;position
 .ref-guide{font-style:normal;font-weight:500;font-size:.65rem;color:#666;padding-left:2px;border-left:2px solid #bbb;margin:0 0 0 4px;font-family:monospace,monospace;display:inline;letter-spacing:-0.5px}
 .ref-guide::before{content:"@ ";font-weight:600;color:#999;margin-right:3px}
 
-.modfr{border:1px solid var(--francais)}
+.modfr{border-bottom:1px solid var(--francais)}
 .modfr > span{background-color:var(--francais);padding: 0px 3px;} 
-.modma{border:1px solid var(--maths)}
+.modma{border-bottom:1px solid var(--maths)}
 .modma > span{background-color:var(--maths);padding: 0px 3px;} 
-.modqlm{border:1px solid var(--qlm)}
+.modqlm{border-bottom:1px solid var(--qlm)}
 .modqlm > span{background-color:var(--qlm);padding: 0px 3px;} 
 
 /* --------------------------------------------- */
