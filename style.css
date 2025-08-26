@@ -49,6 +49,7 @@ i.fa-solid {font-size: 9px;display: inline-block;vertical-align: middle;position
   --litterature: url('https://i.ibb.co/Wpx7CrKZ/litt.png');
   --motricite: url('https://www.zupimages.net/up/25/31/qjai.png');
   --numeration: url('https://i.ibb.co/FbCPFTz3/num-ration.png');
+  --orthographe: url('https://zupimages.net/up/25/35/x1e1.png');
   --poesie: url('https://www.zupimages.net/up/25/31/uavb.png');
   --problemes: url('https://i.ibb.co/DPQPyLDt/problemes.png');
 }
@@ -64,6 +65,8 @@ i.fa-solid {font-size: 9px;display: inline-block;vertical-align: middle;position
 .modma > span{background-color:var(--maths);padding: 0px 3px;} 
 .modqlm{border-bottom:1px solid var(--qlm)}
 .modqlm > span{background-color:var(--qlm);padding: 0px 3px;} 
+.modarts{border-bottom:1px solid var(--arts)}
+.modarts > span{background-color:var(--arts);padding: 0px 3px;color:var(--white)} 
 
 /* --------------------------------------------- */
 
