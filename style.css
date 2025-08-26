@@ -52,6 +52,7 @@ i.fa-solid {font-size: 9px;display: inline-block;vertical-align: middle;position
   --orthographe: url('https://zupimages.net/up/25/35/x1e1.png');
   --poesie: url('https://www.zupimages.net/up/25/31/uavb.png');
   --problemes: url('https://i.ibb.co/DPQPyLDt/problemes.png');
+  --sciences: url('https://zupimages.net/up/25/35/b0y7.png');
 }
 
 .small { display:inline-block; font-size:0.55rem; color:#888; line-height:1; text-align:justify; border-left:1px solid #ccc; padding-left:0.4em; margin-left:0.4em; vertical-align:middle; }
